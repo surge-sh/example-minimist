@@ -1,0 +1,37 @@
+{
+  "name": "@surge/example-minimist",
+  "version": "0.1.0",
+  "description": "How to expose the Surge CLI within your own command line tool, built with Minimist.",
+  "homepage": "https://surge.sh",
+  "repository": "https://github.com/surge-sh/example-minimist.git",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "author": "Kenneth Ormandy <kenneth@surge.sh> (http://kennethormandy.com)",
+  "contributors": [
+    "Kenneth Ormandy <kenneth@surge.sh> (http://kennethormandy.com)",
+    "Brock Whitten   <brock@surge.sh>   (http://sintaxi.com)"
+  ],
+  "keywords": [
+    "surge",
+    "surge.sh",
+    "example",
+    "minimist",
+    "cli",
+    "deploy"
+  ],
+  "bin": {
+    "example": "bin/example.js"
+  },
+  "dependencies": {
+    "chalk": "1.1.1",
+    "minimist": "1.2.0",
+    "surge": "git+https://github.com/sintaxi/surge.git#ko-yargs"
+  },
+  "scripts": {
+    "start": "node ./bin/example",
+    "lint": "standard"
+  },
+  "devDependencies": {
+    "standard": "5.3.1"
+  }
+}
